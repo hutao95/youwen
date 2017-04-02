@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "微软雅黑";
+}
+body {
+  font: 12/1.5 tahoma, arial, "Hiragino Sans GB", "微软雅黑";
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+header {
+  width: 100%;
+  height: 90px;
+  background: #FFFFFF;
+  padding-top: 0.1px;
+}
+header .top {
+  width: 1200px;
+  margin: 0 auto;
+}
+header .top .logo {
+  float: left;
+  padding-top: 30px;
+}
+.nav {
+  width: 800px;
+  height: 90px;
+  float: right;
+  font-size: 15px;
+}
+.nav li {
+  float: left;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+}
+.nav li a {
+  display: inline-block;
+  width: 80px;
+  height: 90px;
+}
+.nav li a.current,
+.nav li a:hover {
+  color: #FF000E;
+  border-bottom: 3px solid #FF000E;
+}
+.nav .nav-phone {
+  width: 200px;
+  text-align: left;
+  background: url("../images/phone.png") no-repeat;
+  background-position: left center;
+  margin-left: 25px;
+  padding-left: 25px;
+}
+.erweima {
+  display: none;
+  position: fixed;
+  top: 220px;
+  right: 190px;
+  width: 116px;
+  height: 110px;
+  z-index: 999;
+}
+.weixin {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  right: 120px;
+  top: 220px;
+  z-index: 999;
+}
+.kefu {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  right: 120px;
+  top: 290px;
+  z-index: 999;
+}
+.goTop {
+  width: 60px;
+  height: 60px;
+  background: url("../images/backtop.png") no-repeat;
+  position: fixed;
+  right: 120px;
+  top: 360px;
+  z-index: 999;
+  cursor: pointer;
+}
+.banner1 {
+  width: 100%;
+  height: 554px;
+  margin-top: 90px;
+  background: url("../images/teachidea/banner.png") no-repeat center center;
+}
+.banner1 h1 {
+  width: 800px;
+  height: 54px;
+  font-size: 36px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 180px;
+  font-weight: normal;
+}
+.banner1 h2 {
+  width: 800px;
+  height: 54px;
+  font-size: 36px;
+  text-align: center;
+  margin: 90px auto 0;
+  color: #FF000E;
+  font-weight: normal;
+}
+.banner1 h3 {
+  width: 190px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  margin: 70px auto 0;
+  background: #FF000E;
+  color: #FFFFFF;
+  font-weight: normal;
+  cursor: pointer;
+}
+.banner2 {
+  width: 100%;
+  height: 446px;
+  background: url("../images/teachidea/cont1bg.png") no-repeat center center;
+}
+.banner2 h1 {
+  width: 100%;
+  height: 84px;
+  line-height: 84px;
+  font-size: 36px;
+  border-top: 300px;
+  text-align: center;
+  font-weight: normal;
+}
+.banner3 {
+  width: 100%;
+  height: 490px;
+  background: #e8f4ff url("../images/teachidea/cont2bg.png") no-repeat center center;
+}
+.banner3 h1 {
+  width: 100%;
+  height: 84px;
+  line-height: 84px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: normal;
+  padding-top: 20px;
+  color: #4ba8ff;
+}
+.banner4 {
+  width: 100%;
+  height: 490px;
+  background: url("../images/teachidea/cont3bg.png") no-repeat center center;
+}
+.banner4 h1 {
+  width: 100%;
+  height: 84px;
+  line-height: 84px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: normal;
+  padding-top: 20px;
+  color: #78d432;
+}
+.banner5 {
+  width: 100%;
+  height: 490px;
+  background: #fffcf7 url("../images/teachidea/cont4bg.png") no-repeat center center;
+}
+.banner5 h1 {
+  width: 100%;
+  height: 84px;
+  line-height: 84px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: normal;
+  padding-top: 20px;
+  color: #ffa800;
+}
+.audition {
+  width: 100%;
+  height: 60px;
+  background: #4c4c4c;
+  z-index: 998;
+  position: fixed;
+  bottom: 0;
+}
+.audition form {
+  width: 920px;
+  margin: 0 auto;
+}
+.audition input {
+  width: 210px;
+  height: 32px;
+  border: 1px solid #fff;
+  background: #fff;
+  margin-top: 14px;
+  margin-left: 10px;
+  font-size: 16px;
+}
+.audition select {
+  width: 90px;
+  height: 34px;
+  border: none;
+  margin-top: 14px;
+  margin-left: 5px;
+}
+.audition button {
+  width: 125px;
+  height: 40px;
+  border-radius: 5px;
+  background: #FF000E;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 30px;
+  text-align: center;
+  line-height: 40px;
+  text-indent: 0;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.footer {
+  width: 100%;
+  height: 60px;
+  background: #333333;
+  margin: 0 auto;
+}
+.footer p {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 40px;
+  color: #ddd;
+}
+.footer a {
+  display: block;
+  width: 400px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  background: url("../images/beian.png") no-repeat;
+  background-position-x: 60px;
+  cursor: pointer;
+  margin: 0 auto;
+  color: #ddd;
+}
+.maskt {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+.tcyy {
+  position: fixed;
+  display: none;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 804px;
+  height: 400px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background: #fff;
+  margin-top: 10%;
+  z-index: 999;
+}
+.tcyyl {
+  width: 399px;
+  height: 100%;
+  color: #444;
+  font-size: 22px;
+  padding-top: 90px;
+  padding-left: 15px;
+}
+.tcyyl p {
+  display: inline-block;
+  width: 100%;
+  margin-left: 60px;
+  float: left;
+}
+.hr {
+  width: 3px;
+  height: 220px;
+  background: #bcbcbc;
+  margin-top: 0;
+}
+.tcyyr {
+  width: 400px;
+  height: 100%;
+  float: right;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.tcyyr input {
+  width: 310px;
+  height: 42px;
+  text-indent: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  margin: 10px 0;
+}
+.tcyyr input:first-child {
+  margin-top: 100px;
+}
+.tcyyr select {
+  width: 100px;
+  height: 42px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #FFFFFF;
+  color: #333;
+}
+.tcyyr button {
+  width: 240px;
+  height: 46px;
+  background: #ea5d64;
+  font-size: 18px;
+  color: #fff;
+  margin-top: 20px;
+  margin-left: 30px;
+  text-align: center;
+  line-height: 46px;
+  border-radius: 10px;
+  border: none;
+}
+.guanbi {
+  color: #bcbcbc;
+  width: 24px;
+  height: 24px;
+  background: url("../images/closeico.png");
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: 22px;
+  text-indent: 90%;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

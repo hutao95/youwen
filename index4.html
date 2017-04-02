@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>优问教育</title>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style4.css" />
+		<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+		<script src="js/wow.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery_goTop_1.0.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header>
+			<div class="top">
+				<div class="logo">
+					<img src="images/logo.png" />
+				</div>
+				<div class="nav">
+					<ul>
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="index1.html">教学理念</a>
+						</li>
+						<li>
+							<a href="index2.html">课程体系</a>
+						</li>
+						<li>
+							<a href="index3.html">师资力量</a>
+						</li>
+						<li>
+							<a class="current" href="index4.html">学习流程</a>
+						</li>
+						<li>
+							<a href="index5.html">优问课堂</a>
+						</li>
+						<li>
+							<a href="index6.html">在线一对一</a>
+						</li>
+						<li class="nav-phone">电话：400-777-5029</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="banner">
+			<a href="javascript:;" class="banner1 wow bounceIn" data-wow-duration="1s">免费预约</a>
+		</div>
+		<div class="main-top">
+			<h1>专业的团队<span>服务</span></h1>
+			<h3>为孩子找到最合适的学习方法</h3>
+			<div class="row">
+				<img src="images/flowchart/flowimg.png" />
+			</div>
+			<div class="bespeak wow bounceIn" data-wow-duration="1s">免费预约</div>
+		</div>
+		<div class="main-bottom">
+			<h1>全方位的优质的<span>跟进沟通</span></h1>
+			<h3>让您的孩子享受优质的教学服务</h3>
+			<div class="bottom-row">
+				<div><img src="images/lian.png" /></div>
+				<div><img src="images/ce.png" /></div>
+				<div><img src="images/xue.png" /></div>
+				<div><img src="images/ping.png" /></div>
+				<div><img src="images/gai.png" /></div>
+			</div>
+			<div class="bespeakt wow bounceIn" data-wow-duration="1s">免费预约</div>
+		</div>
+		<div class="audition">
+			<form action="" method="post">
+				<input type="text" name="" id="" value="" placeholder="姓名" />
+				<input type="text" name="" id="" value="" placeholder="手机号码" />
+				<select id="phase">
+					<option>--阶段--</option>
+				</select>
+				<select id="grade">
+					<option value="">--年级--</option>
+				</select>
+				<select id="course">
+					<option value="">语文</option>
+					<option value="">数学</option>
+					<option value="">英语</option>
+					<option value="">物理</option>
+					<option value="">化学</option>
+				</select>
+				<button>0元免费试听</button>
+			</form>
+		</div>
+		<div class="footer">
+			<p>Copyright © 上海优问文化传播有限公司（沪ICP备16050428号）</p>
+			<a href="">沪公网安备 31011002000908号</a>
+		</div>
+		<div class="erweima"><img src="images/codepic.png" /></div>
+		<div class="weixin">
+			<a href=""><img src="images/wechatcode.png" /></a>
+		</div>
+		<div class="kefu">
+			<a href=""><img src="images/lineserver.png" /></a>
+		</div>
+		<div class="goTop"></div>
+		<div class="maskt"></div>
+		<div class="tcyy">
+			<div class="tcyyl">
+				<p>超小组&nbsp;&nbsp;分层次&nbsp;&nbsp;强互动</p>
+				<p>全流程强化中小学生学习动力</p>
+				<img src="images/mtk_boy.png" />
+			</div>
+			<div class="tcyyr">
+				<p class="guanbi"></p>
+				<form id="form2" name="form">
+					<p>
+						<input type="text" name="" id="" value="" placeholder="姓名" />
+						<input type="text" name="" id="" value="" placeholder="手机号码" />
+					</p>
+					<select name="">
+						<option value="">小学</option>
+						<option value="">小升初</option>
+						<option value="">初中</option>
+						<option value="">中考冲刺</option>
+						<option value="">高中</option>
+						<option value="">高考冲刺</option>
+					</select>
+					<select name="">
+						<option value="">一年级</option>
+						<option value="">二年级</option>
+						<option value="">三年级</option>
+						<option value="">四年级</option>
+						<option value="">五年级</option>
+						<option value="">六年级</option>
+					</select>
+					<select name="">
+						<option value="">语文</option>
+						<option value="">数学</option>
+						<option value="">英语</option>
+					</select>
+					<button>免费预约</button>
+				</form>
+			</div>
+		</div>
+		<script type="text/javascript">
+//			new WOW().init();
+			var wow = new WOW({
+			    boxClass: 'wow',
+			    animateClass: 'animated',
+			    offset: 150,
+			    mobile: true,
+			    live: true
+			});
+			wow.init();
+			$(function() {
+				//微信 咨询 返回顶部
+				$(".weixin").mouseenter(function() {
+					$(".erweima").css("display", "block");
+				}).mouseleave(function() {
+					$(".erweima").css("display", "none");
+				});
+				$(".goTop").mouseenter(function() {
+					$(this).css("background-image", "url(images/gotop.png)")
+				}).mouseleave(function() {
+					$(this).css("background-image", "url(images/backtop.png)");
+				});
+				$(".goTop").goTop({
+					"speed": 1000,
+				});
+				//模态框
+				$(".bespeakt,.banner1,.banner3,.bespeak,button,.bespeaks").click(function() {
+					$(".tcyy").fadeIn();
+					$(".maskt").fadeIn();
+				});
+				$(".guanbi").click(function() {
+					$(".tcyy").fadeOut();
+					$(".maskt").fadeOut();
+				});
+				//底部
+				$(window).scroll(function(){
+					var scrollTop = $(this).scrollTop();
+					var scrollHeight = $(document).height();
+					var windowHeight = $(this).height();
+					if(scrollHeight-(scrollTop + windowHeight)<5){	
+					$(".audition").css({"bottom":"60px"});
+					}else{
+						$(".audition").css({"bottom":"0"});
+					}
+				});
+			});
+
+			var myCity = new Array();
+			myCity["小学"] = ["一年级", "二年级", "三年级", "四年级", "五年级", "六年级"];
+			myCity["小升初"] = ["小升初"];
+			myCity["初中"] = ["预初", "初一", "初二", "初三"];
+			myCity["中考冲刺"] = ["中考冲刺"];
+			myCity["高中"] = ["高一", "高二", "高三"];
+			myCity["高中冲刺"] = ["高中冲刺"];
+			var p = document.getElementById("phase");
+			var g = document.getElementById("grade");
+			for(var i in myCity) {
+				p.add(new Option(i, i), null);
+			}
+			p.onchange = function() {
+				g.options.length = 0;
+				if(p.value == "--阶段--") {
+					g.add(new Option("--年级--"));
+				}
+				for(var i in myCity) {
+					if(p.value == i) {
+						for(var j in myCity[i]) {
+							g.add(new Option(myCity[i][j], myCity[i][j]), null);
+						}
+					}
+				}
+			}
+		</script>
+	</body>
+
+</html>
